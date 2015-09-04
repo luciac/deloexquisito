@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* Add Styles Here */
+
+
+
+/*body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+font-family: 'Work Sans', sans-serif;
+*/
+
+
+
+
+
+ul { list-style-type: none;}
+
+.cb-slideshow,
+.cb-slideshow:after { position: fixed;
+	width: 100vw; height: 100vh;
+    top: 0px; left: 0px; z-index: -10; }
+	
+.cb-slideshow li span { width: 100vw; height: 100vh;
+	position: absolute; top: 0px; left: 0px;
+	color: transparent; background-size: cover;
+	background-position: 50% 50%; opacity: 0; z-index: -10;
+	-webkit-animation: imageAnimation 36s linear infinite 0s; }
+	
+.cb-slideshow li:nth-child(1) span { 
+	background-image: url(images/boda01.jpg) }
+
+.cb-slideshow li:nth-child(2) span { 
+	background-image: url(images/wed04.jpg);
+    -webkit-animation-delay: 9s; }
+.cb-slideshow li:nth-child(3) span { 
+	background-image: url(images/boda03.jpg);
+    -webkit-animation-delay: 18s; }/*
+.cb-slideshow li:nth-child(4) span { 
+	background-image: url(images/dunkin.jpg);
+    -webkit-animation-delay: 18s; }
+.cb-slideshow li:nth-child(5) span { 
+	background-image: url(images/lobstah.jpg);
+    -webkit-animation-delay: 24s; }
+.cb-slideshow li:nth-child(6) span { 
+	background-image: url(images/colours.jpg);
+    -webkit-animation-delay: 30s; }*/
+/*
+.cb-slideshow li:nth-child(2) div { -webkit-animation-delay: 8s; }
+.cb-slideshow li:nth-child(3) div { -webkit-animation-delay: 16s; }
+.cb-slideshow li:nth-child(4) div { -webkit-animation-delay: 18s; }
+.cb-slideshow li:nth-child(5) div { -webkit-animation-delay: 24s; }
+.cb-slideshow li:nth-child(6) div { -webkit-animation-delay: 30s; }*/
+
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    10% { opacity: 1; animation-timing-function: ease-out; }
+    90% { opacity: 1 }
+    100% { opacity: 0 } }
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1; }
+
+
+
+
+nav { background-color: white;
+	background-image: url("images/worndots.png");
+	height: 150px; width: 100vw;
+	position: absolute;
+	top: 0px; left: 0px; bottom: 0; right: 0; 
+	margin: auto; z-index: 99;
+    box-shadow: 0px 0px 40px 0px #999999;
+ }
+
+
+
+.danav { position: absolute; height: 17px; text-align: center;
+	top: 0px; left: 0px; bottom: 0; right: 0;
+	margin-left: auto; marigin-right: auto; margin: auto; }
+
+/*ul { background-color: purple; }*/
+
+.danav li { display: inline; }
+
+a { font-family: 'Work Sans', Helvetica, Ariel sans-serif;
+	font-weight: 200; text-transform: uppercase; text-decoration: none;
+	font-size: 17px; color: black;
+
+		
+	display: inline-block;
+	height: 17px; padding-top: 13px; padding-bottom: 13px;
+	padding-left: 15px; padding-right: 15px;
+	position: relative; top: -100px; left: 0px; right: 0; 
+	margin: auto; }
+
+.landlogo { position: relative; top: 86px; }
+
+.landinglogo { height: 100px; padding-left: 0; padding-right: 0;
+	position: relative; top: -41px; }
+
+
+.navlink:hover { color: #c9a751;  border-bottom: thin solid #c9a751; }
